@@ -25,11 +25,11 @@ class Dz3_9 {
       System.out.println ("исходная колода: ");
       System.out.println(Arrays.toString(koloda));
       
-     int nn_=5; //кол-во перемешиваний     
-     for(int ii=1;ii<=5;ii++){
+     int nn_=(int)(Math.random()*10+5); //кол-во перемешиваний     
+     for(int ii=1;ii<=nn_;ii++){
       int m = (int)(Math.random()*35);
       int n = (int)(Math.random()*(34-m)+1);
-      System.out.println ("сдвиг: "+m+" кол-во: "+n);
+      System.out.println ("перемешивание: "+ii+" сдвиг: "+m+" кол-во карт: "+n);
       
       int j=0;
       for(i=m;i<m+n; i++){
